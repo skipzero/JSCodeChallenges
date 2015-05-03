@@ -10,24 +10,18 @@ describe('Sorting a list', function() {
     bubbleSort(list).should.eql(sorted);
   });
 
-  it('sorts [0, 0, 0, 1]', function() {
-    var list = [0, 0, 0, 1];
-    var sorted = [0, 0, 0, 1];
-
-    bubbleSort(list).should.eql(sorted);
+  it('sorts [2, 2, 2, 1]', function() {
+    var list = [2, 2, 2, 1];
+    var sorted = [1, 2, 2, 2];
   });
 
-  it('sorts [0, 1, 0, 1]', function() {
-    var list = [0, 1, 0, 1];
-    var sorted = [0, 0, 1, 1];
-
-    bubbleSort(list).should.eql(sorted);
+  it('sorts [2, 1, 2, 1]', function() {
+    var list = [2, 1, 2, 1];
+    var sorted = [1, 1, 2, 2];
   });
 
-  it('sorts [1, 0, 0, 0]', function() {
-    var list = [1, 0, 0, 0];
-    var sorted = [0, 0, 0, 1];
-
-    bubbleSort(list).should.eql(sorted);
+  it('sorts [1, 2, 2, 2]', function() {
+    var list = [1, 2, 2, 2];
+    var sorted = [1, 2, 2, 2];
   });
 });
