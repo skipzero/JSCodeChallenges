@@ -23,7 +23,6 @@ function bubbleSort(list) {
 	            list[i] = bck - 1;
 	            list[i + 1] = fwd -1;
 	        } 
-	        console.log(list)
 	    }
 	}
   	return list;
