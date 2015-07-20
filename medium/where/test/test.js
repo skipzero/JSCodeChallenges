@@ -5,7 +5,7 @@ var where = require('../src/index.js');
 
 var devs = [
   {'name': 'ripter', powerLevel: 9001, pets: ['Rose']}
-  , {'name': 'Skip', powerLevel: 4000, pets: ['Poe', 'Jynix']}
+  , {'name': 'Skip', powerLevel: 4000, pets: ['Poe', 'Jinx']}
 ];
 
 
@@ -19,7 +19,7 @@ describe('Object filtering', function() {
   it('can match nested array', function() {
     should.deepEqual(
       where({ 'pets': ['Poe'] }, devs),
-      [{name: 'Skip', powerLevel: 4000, pets: ['Poe', 'Jynix']}]);
+      [{name: 'Skip', powerLevel: 4000, pets: ['Poe', 'Jinx']}]);
   });
 
   it('returns new array', function() {
