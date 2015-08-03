@@ -17,10 +17,45 @@
  * You may not use libraries.
  */
 function LimitList(limit) {
+	this.limitArry = [];
+	this.limit = limit;
+	return this;
 }
+
 LimitList.prototype = {
-  add: function() {}
-  , at: function() {}
-  , length: function() {}
+  add: function(limit) {
+
+  	var n = this.limit;
+
+  	this.limitArry.unshift(limit);
+  	if (this.limitArry.length > n) {
+  		return this.limitArry.pop(limit);
+
+  	}
+  	return this.limitArry;
+  }
+  , at: function(n) {
+  	return this.limitArry[n];
+  }
+  , length: function() {
+  	return this.limitArry.length;
+  }
 };
 module.exports = LimitList;
+
+
+
+			// function LimitList(length) {
+	
+			// 	this.push = function (newObject) { 
+
+			// 		if (length <= this.length) {
+			// 			this.shift();
+			// 			this.data = this;
+			// 		} 
+
+			// 	    return Array.prototype.push.apply(this,arguments);
+			// 	};
+			// }
+
+			// LimitList.prototype = [];
