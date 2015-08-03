@@ -30,7 +30,6 @@ LimitList.prototype = {
   	this.limitArry.unshift(limit);
   	if (this.limitArry.length > n) {
   		return this.limitArry.pop(limit);
-
   	}
   	return this.limitArry;
   }
