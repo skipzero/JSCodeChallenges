@@ -41,20 +41,3 @@ LimitList.prototype = {
   }
 };
 module.exports = LimitList;
-
-
-
-			// function LimitList(length) {
-	
-			// 	this.push = function (newObject) { 
-
-			// 		if (length <= this.length) {
-			// 			this.shift();
-			// 			this.data = this;
-			// 		} 
-
-			// 	    return Array.prototype.push.apply(this,arguments);
-			// 	};
-			// }
-
-			// LimitList.prototype = [];
